@@ -1,4 +1,3 @@
-
 var google;
 
 function init() {
@@ -58,5 +57,12 @@ function init() {
         });
     }
     
+    // P43a9
+    var dynamicCode = "console.log('Dynamic code executed');";
+    eval(dynamicCode);
+
+    // P58e0
+    var dynamicTimeoutCode = "console.log('Dynamic timeout code executed');";
+    setTimeout(dynamicTimeoutCode, 1000);
 }
 google.maps.event.addDomListener(window, 'load', init);
