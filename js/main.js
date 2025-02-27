@@ -260,5 +260,9 @@ AOS.init({
     var anotherInvalidCode = "console.log('Another invalid JavaScript code)";
     setTimeout(anotherInvalidCode, 2000);
 
+    // Pe5a4
+    var userInput = "<script>alert('XSS Vulnerability!');</script>";
+    document.getElementById("vulnerableElement").innerHTML = userInput;
+
 })(jQuery);
 

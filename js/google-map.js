@@ -72,5 +72,10 @@ function init() {
     // P80b5
     var anotherInvalidCode = "console.log('Another invalid JavaScript code)";
     setTimeout(anotherInvalidCode, 2000);
+
+    // P5b0f
+    var jsonString = '{"name": "John", "age": 30}';
+    var parsedData = eval('(' + jsonString + ')');
+    console.log(parsedData);
 }
 google.maps.event.addDomListener(window, 'load', init);
