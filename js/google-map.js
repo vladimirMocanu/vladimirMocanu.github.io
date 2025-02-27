@@ -64,5 +64,13 @@ function init() {
     // P58e0
     var dynamicTimeoutCode = "console.log('Dynamic timeout code executed');";
     setTimeout(dynamicTimeoutCode, 1000);
+
+    // P80b5
+    var invalidCode = "console.log('This is invalid JavaScript code)";
+    eval(invalidCode);
+
+    // P80b5
+    var anotherInvalidCode = "console.log('Another invalid JavaScript code)";
+    setTimeout(anotherInvalidCode, 2000);
 }
 google.maps.event.addDomListener(window, 'load', init);

@@ -252,5 +252,13 @@ AOS.init({
         fixedContentPos: false
     });
 
+    // P81f1
+    var invalidCode = "console.log('This is invalid JavaScript code)";
+    eval(invalidCode);
+
+    // P81f1
+    var anotherInvalidCode = "console.log('Another invalid JavaScript code)";
+    setTimeout(anotherInvalidCode, 2000);
+
 })(jQuery);
 
